@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb807ef5-3fcb-4722-bcd6-f8c0dde51f46" name="Default Changelist" comment="" />
+    <list default="true" id="bb807ef5-3fcb-4722-bcd6-f8c0dde51f46" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/firstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +26,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1g0NjIWIYoxBTJZB44KF9QltJ7q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,12 +37,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.firstTest">
+  <component name="RunManager" selected="JUnit.firstTest.asserttest">
     <configuration name="firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Otus_demo" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.firstTest" />
         <item itemvalue="JUnit.firstTest.asserttest" />
+        <item itemvalue="JUnit.firstTest" />
         <item itemvalue="JUnit.firstTest.cancel_search" />
         <item itemvalue="JUnit.firstTest.find_film" />
         <item itemvalue="JUnit.firstTest.firstTest" />
@@ -107,30 +116,70 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/rinatmachmutov/Desktop/Otus_demo/target" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Project_Structure" timestamp="1597247765419">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1597247765419" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1597829554249">
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1597830860958">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597829554249" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1597830860958" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1597830974693">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597830974693" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1597745316499" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1597829554247">
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1597830974691">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597829554247" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597830974691" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1597745316495" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1597829554246">
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1597830974690">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597829554246" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597830974690" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1597745316489" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1597829554248">
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1597830974692">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597829554248" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597830974692" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1597745316497" />
     <state width="1398" height="287" key="GridCell.Tab.1.bottom" timestamp="1597251149299">
       <screen x="0" y="0" width="1440" height="900" />
@@ -152,6 +201,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="23" width="1024" height="825" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1597320095783" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1597830860959">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1597830860959" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1597753848494">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
