@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb807ef5-3fcb-4722-bcd6-f8c0dde51f46" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Otus_demo" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1g0NjIWIYoxBTJZB44KF9QltJ7q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.firstTest">
+    <configuration name="firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Otus_demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="firstTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="firstTest.asserttest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Otus_demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="firstTest" />
+      <option name="METHOD_NAME" value="asserttest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="firstTest.cancel_search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Otus_demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="firstTest" />
+      <option name="METHOD_NAME" value="cancel_search" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="firstTest.find_film" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Otus_demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="firstTest" />
+      <option name="METHOD_NAME" value="find_film" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="firstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Otus_demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="firstTest" />
+      <option name="METHOD_NAME" value="firstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.firstTest" />
+        <item itemvalue="JUnit.firstTest.asserttest" />
+        <item itemvalue="JUnit.firstTest.cancel_search" />
+        <item itemvalue="JUnit.firstTest.find_film" />
+        <item itemvalue="JUnit.firstTest.firstTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb807ef5-3fcb-4722-bcd6-f8c0dde51f46" name="Default Changelist" comment="" />
+      <created>1597247683491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597247683491</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Project_Structure" timestamp="1597247765419">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1597247765419" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1597829554249">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597829554249" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1597745316499" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1597829554247">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597829554247" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1597745316495" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1597829554246">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597829554246" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1597745316489" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1597829554248">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597829554248" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1597745316497" />
+    <state width="1398" height="287" key="GridCell.Tab.1.bottom" timestamp="1597251149299">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="287" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597251149299" />
+    <state width="1398" height="287" key="GridCell.Tab.1.center" timestamp="1597251149298">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="287" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1597251149298" />
+    <state width="1398" height="287" key="GridCell.Tab.1.left" timestamp="1597251149297">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="287" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1597251149297" />
+    <state width="1398" height="287" key="GridCell.Tab.1.right" timestamp="1597251149298">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="287" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1597251149298" />
+    <state x="208" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1597320095783">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="23" width="1024" height="825" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1597320095783" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1597753848494">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1597753848494" />
+    <state x="114" y="63" key="new project wizard" timestamp="1597322991854">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="114" y="63" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1597322991854" />
+  </component>
+</project>
