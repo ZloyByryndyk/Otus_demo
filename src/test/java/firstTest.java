@@ -1,19 +1,23 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+//import javafx.util.Duration;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
+import java.util.List;
 
 
 public class firstTest {
@@ -44,7 +48,7 @@ public class firstTest {
     // After анотация к Junit
     @After
     //tearDown метод исполняющий действия после прохождения теста'ов
-    public void tearDown() throws Exception
+    public void tearDown()
     {
         driver.quit();
     }
@@ -53,17 +57,17 @@ public class firstTest {
     @Test
     //тест который жмёт  кнопку поиска, вбивает в input значение "film", а потом выбираем конкретный фильм из появившегося списка
     public  void find_film() {
-        waitForElementAndClickByXpath(
-                "//android.widget.TextView[@content-desc=\"Search\"]",
+        waitForElementAndClick(
+                By.xpath("//android.widget.TextView[@content-desc=\"Search\"]"),
                 "Не смог найти кнопку поиска"
         );
-        waitForElementAndSendKeysByXpath(
-                "//*[@resource-id='dev.akat.filmreel:id/search_src_text']",
+        waitForElementAndSendKeys(
+                By.xpath("//*[@resource-id='dev.akat.filmreel:id/search_src_text']"),
                 "film",
                 "Не смог найти инпут для ввода текста"
         );
-        waitForElementAndClickByXpath(
-                "//*[contains(@text, 'A Serbian Film')]",
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'A Serbian Film')]"),
                 "Не смог найти фильм"
         );
     }
@@ -72,20 +76,20 @@ public class firstTest {
     @Test
     //
     public void cancel_search () {
-        waitForElementByIdAndClick(
-                "dev.akat.filmreel:id/menu_search_action",
+        waitForElementAndClick(
+                By.id("dev.akat.filmreel:id/menu_search_action"),
                 "Не смог найти кнопку поиска"
         );
-        waitForElementByIdAndClick(
-                "dev.akat.filmreel:id/search_src_text",
+        waitForElementAndClick(
+                By.id("dev.akat.filmreel:id/search_src_text"),
                 "Не смог найти инпут для ввода текста"
         );
-        waitForElementByIdAndClick(
-                "Collapse",
+        waitForElementAndClick(
+                By.id("Collapse"),
                 "Не могу найти кнопку назад"
         );
-        waitForElementByIdAndClick(
-                "Navigate up",
+        waitForElementAndClick(
+                By.id("Navigate up"),
                 "Не могу найти вторую кнопку назад"
         );
         waitForElementNotPresentById(
@@ -98,21 +102,21 @@ public class firstTest {
 
     @Test
     public void asserttest () {
-        waitForElementByIdAndClick(
-                "dev.akat.filmreel:id/menu_search_action",
+        waitForElementAndClick(
+                By.id("dev.akat.filmreel:id/menu_search_action"),
                 "Не смог найти кнопку поиска"
         );
-        waitForElementByIdAndSendKeys(
-                "dev.akat.filmreel:id/search_src_text",
+        waitForElementAndSendKeys(
+                By.id("dev.akat.filmreel:id/search_src_text"),
                 "film",
                 "Не смог найти инпут для ввода текста"
         );
-        waitForElementAndClickByXpath(
-                "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]",
+        waitForElementAndClick(
+                By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]"),
                 "Не могу найти конкретный фильм"
         );
-        WebElement film_text = waitForElementById(
-                "dev.akat.filmreel:id/movie_overview",
+        WebElement film_text = waitForElement(
+                By.id("dev.akat.filmreel:id/movie_overview"),
                 "Не могу найти описание фильма"
         );
 
@@ -123,22 +127,16 @@ public class firstTest {
                 "Milos, a retired porn star, leads a normal family life trying to make ends meet. Presented with the opportunity of a lifetime to financially support his family for the rest of their lives, Milos must participate in one last mysterious film. From then on, Milos is drawn into a maelstrom of unbelievable cruelty and mayhem.",
                  actual
         );
-
-        new TouchAction(driver).press(PointOption.point(713,2325)).waitAction().press(PointOption.point(799,193)).release().perform();
-
     }
-
-
 
 
 
     // метод который ищет элемент по xpath
     // (при вызове необходимо передать в него 3 аргумента: xpath, сообщение об ошибке и время ожидание элемента)
-    private WebElement waitForElementByXpath (String xpath, String error_message, long timeOutInSecond)
+    private WebElement waitForElement(By by, String error_message, long timeOutInSecond)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeOutInSecond);
         wait.withMessage(error_message + "\n");
-        By by = By.xpath(xpath);
         return wait.until(
                 ExpectedConditions.presenceOfElementLocated(by)
         );
@@ -146,83 +144,35 @@ public class firstTest {
     //перегрузка предыдущего метода, в отличие от первого сюда нужно передать два аргумента (без времени)
     //то есть, когда нам нужно указать конкретное время используем первый метод, если нас устраивает стандартное время
     //в 5 секунд, используем кторой метод
-    private WebElement waitForElementByXpath (String xpath, String error_message)
+    private WebElement waitForElement(By by, String error_message)
     {
-        return waitForElementByXpath(xpath, error_message, 5);
+        return waitForElement(by, error_message, 5);
     }
     // метод который ищет элемент по xpath и кликает на него
-    private WebElement waitForElementAndClickByXpath(String xpath, String error_message, long timeOutInSecond)
+    private WebElement waitForElementAndClick(By by, String error_message, long timeOutInSecond)
     {
-        WebElement element =  waitForElementByXpath(xpath, error_message,timeOutInSecond);
+        WebElement element =  waitForElement(by, error_message,timeOutInSecond);
         element.click();
         return element;
     }
     // перегрузка предыдущего метода,
-    private WebElement waitForElementAndClickByXpath(String xpath, String error_message)
+    private WebElement waitForElementAndClick(By by, String error_message)
     {
-        WebElement element =  waitForElementByXpath(xpath, error_message,5);
+        WebElement element =  waitForElement(by, error_message,5);
         element.click();
         return element;
     }
     //метод который ищет элемент по xpath и вводит в него значение
-    private WebElement waitForElementAndSendKeysByXpath(String xpath, String value, String error_message, long timeOutInSecond)
+    private WebElement waitForElementAndSendKeys(By by, String value, String error_message, long timeOutInSecond)
     {
-        WebElement element =  waitForElementByXpath(xpath, error_message,timeOutInSecond);
+        WebElement element =  waitForElement(by, error_message,timeOutInSecond);
         element.sendKeys(value);
         return element;
     }
     //перегрузка предыдущего метода
-    private WebElement waitForElementAndSendKeysByXpath(String xpath, String value, String error_message)
+    private WebElement waitForElementAndSendKeys(By by, String value, String error_message)
     {
-        WebElement element =  waitForElementByXpath(xpath, error_message,5);
-        element.sendKeys(value);
-        return element;
-    }
-
-
-
-    //метод который ищет элемент по Id
-    private WebElement waitForElementById (String id, String error_message, long timeOutInSecond)
-    {
-        WebDriverWait wait = new WebDriverWait(driver, timeOutInSecond);
-        wait.withMessage(error_message + "\n");
-        By by = By.id(id);
-        return wait.until(
-                ExpectedConditions.presenceOfElementLocated(by)
-        );
-    }
-    //перегрузка предыдущего метода
-    private WebElement waitForElementById(String id, String error_message)
-    {
-        WebElement element =  waitForElementById(id, error_message,5);
-        element.click();
-        return element;
-    }
-    //метод который ищет элемент по Id и кликает на него
-    private WebElement waitForElementByIdAndClick (String id, String error_message, long timeOutInSecond)
-    {
-        WebElement element = waitForElementById(id, error_message, timeOutInSecond);
-        element.click();
-        return element;
-    }
-    //перегрузка предыдущего метода
-    private WebElement waitForElementByIdAndClick (String id, String error_message)
-    {
-        WebElement element = waitForElementById(id, error_message,5);
-        element.click();
-        return element;
-    }
-    //метод который ищет элемент по Id и вводит в него значение
-    private WebElement waitForElementByIdAndSendKeys (String id,String value, String error_message, long timeOutInSecond)
-    {
-        WebElement element = waitForElementById(id, error_message, timeOutInSecond);
-        element.sendKeys(value);
-        return element;
-    }
-    // перегрузка предыдущего метода
-    private WebElement waitForElementByIdAndSendKeys (String id,String value, String error_message)
-    {
-        WebElement element = waitForElementById(id, error_message,5);
+        WebElement element =  waitForElement(by, error_message,5);
         element.sendKeys(value);
         return element;
     }
