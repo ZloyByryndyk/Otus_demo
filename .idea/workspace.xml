@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb807ef5-3fcb-4722-bcd6-f8c0dde51f46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/firstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/firstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +42,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.VCS" />
   </component>
-  <component name="RunManager" selected="JUnit.firstTest.swipe">
+  <component name="RunManager" selected="JUnit.firstTest.swipe_test">
     <configuration name="firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Otus_demo" />
       <option name="PACKAGE_NAME" value="" />
@@ -63,31 +62,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="firstTest.cleariNPUT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="firstTest.clear_input" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Otus_demo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="firstTest" />
-      <option name="METHOD_NAME" value="cleariNPUT" />
+      <option name="METHOD_NAME" value="clear_input" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="firstTest.find_film" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="firstTest.search_and_clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Otus_demo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="firstTest" />
-      <option name="METHOD_NAME" value="find_film" />
+      <option name="METHOD_NAME" value="search_and_clear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="firstTest.swipe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="firstTest.swipe_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Otus_demo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="firstTest" />
-      <option name="METHOD_NAME" value="swipe" />
+      <option name="METHOD_NAME" value="swipe_test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,11 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.firstTest.swipe" />
-        <item itemvalue="JUnit.firstTest.cancel_search" />
-        <item itemvalue="JUnit.firstTest.cleariNPUT" />
+        <item itemvalue="JUnit.firstTest.swipe_test" />
         <item itemvalue="JUnit.firstTest" />
-        <item itemvalue="JUnit.firstTest.find_film" />
+        <item itemvalue="JUnit.firstTest.search_and_clear" />
+        <item itemvalue="JUnit.firstTest.cancel_search" />
+        <item itemvalue="JUnit.firstTest.clear_input" />
       </list>
     </recent_temporary>
   </component>
@@ -165,27 +164,27 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1597830860958" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1597937919596">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1598279561822">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597937919596" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1597931883799" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1597937919592">
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598279561822" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598270039183" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1598279561820">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597937919592" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1597931883796" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1597937919591">
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598279561820" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1598270039181" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1598279561819">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597937919591" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598279561819" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.23.1440.825" timestamp="1597931883794" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1597930365266" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1597937919593">
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1598270039181" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1598279561821">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="229" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597937919593" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1597931883798" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598279561821" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1598270039182" />
     <state width="1398" height="287" key="GridCell.Tab.1.bottom" timestamp="1597251149299">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

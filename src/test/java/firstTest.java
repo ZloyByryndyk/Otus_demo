@@ -1,9 +1,7 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
-//import javafx.util.Duration;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -16,8 +14,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
-import java.time.Duration;
-import java.util.List;
 
 
 public class firstTest {
@@ -40,9 +36,6 @@ public class firstTest {
         capabilities.setCapability("app","/Users/rinatmachmutov/Desktop/Otus_demo/apk/app-debug.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-        // эта конструкция задаёт неочевидную задержку перед исполнением след шага, то есть любое действие будет
-        // ожидать 30 сек пока не найдет указанный элемент, а потом тест удадет
-        // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     // After анотация к Junit
@@ -59,7 +52,8 @@ public class firstTest {
     public  void find_film() {
         waitForElementAndClick(
                 By.xpath("//android.widget.TextView[@content-desc=\"Search\"]"),
-                "Не смог найти кнопку поиска"
+                "Не смог найти кнопку поиска",
+                5
         );
         waitForElementAndSendKeys(
                 By.xpath("//*[@resource-id='dev.akat.filmreel:id/search_src_text']"),
@@ -68,43 +62,47 @@ public class firstTest {
         );
         waitForElementAndClick(
                 By.xpath("//*[contains(@text, 'A Serbian Film')]"),
-                "Не смог найти фильм"
+                "Не смог найти фильм",
+                5
         );
     }
-
 
     @Test
     //
     public void cancel_search () {
         waitForElementAndClick(
                 By.id("dev.akat.filmreel:id/menu_search_action"),
-                "Не смог найти кнопку поиска"
+                "Не смог найти кнопку поиска",
+                5
         );
         waitForElementAndClick(
                 By.id("dev.akat.filmreel:id/search_src_text"),
-                "Не смог найти инпут для ввода текста"
+                "Не смог найти инпут для ввода текста",
+                5
         );
         waitForElementAndClick(
                 By.id("Collapse"),
-                "Не могу найти кнопку назад"
+                "Не могу найти кнопку назад",
+                5
         );
         waitForElementAndClick(
                 By.id("Navigate up"),
-                "Не могу найти вторую кнопку назад"
+                "Не могу найти вторую кнопку назад",
+                5
         );
         waitForElementNotPresentById(
-                "dev.akat.filmreel:id/search_src_text",
+                By.id("dev.akat.filmreel:id/search_src_text"),
                 "Инпут с предыдущего экрана все еще есть",
                 5
         );
     }
 
-
     @Test
-    public void asserttest () {
+    public void assertTest () {
         waitForElementAndClick(
                 By.id("dev.akat.filmreel:id/menu_search_action"),
-                "Не смог найти кнопку поиска"
+                "Не смог найти кнопку поиска",
+                5
         );
         waitForElementAndSendKeys(
                 By.id("dev.akat.filmreel:id/search_src_text"),
@@ -113,7 +111,8 @@ public class firstTest {
         );
         waitForElementAndClick(
                 By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]"),
-                "Не могу найти конкретный фильм"
+                "Не могу найти конкретный фильм",
+                5
         );
         WebElement film_text = waitForElement(
                 By.id("dev.akat.filmreel:id/movie_overview"),
@@ -126,6 +125,45 @@ public class firstTest {
                 "не совпадает",
                 "Milos, a retired porn star, leads a normal family life trying to make ends meet. Presented with the opportunity of a lifetime to financially support his family for the rest of their lives, Milos must participate in one last mysterious film. From then on, Milos is drawn into a maelstrom of unbelievable cruelty and mayhem.",
                  actual
+        );
+    }
+
+    @Test
+    public void search_and_clear()
+    {
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.TextView[@content-desc=\"Search\"]"),
+                "Не смог найти кнопку поиска",
+                5
+        );
+        waitForElementAndSendKeys(
+                By.xpath("//*[@resource-id='dev.akat.filmreel:id/search_src_text']"),
+                "film",
+                "Не смог найти инпут для ввода текста"
+        );
+
+        WebElement clear = waitForElementAndClear(
+                By.xpath("//*[@resource-id='dev.akat.filmreel:id/search_src_text']"),
+                "Не смог очистить инпут",
+                5
+        );
+
+        String assert_clear = clear.getText();
+        Assert.assertEquals(
+                "Текст все еще есть",
+                "   ",
+                assert_clear
+        );
+    }
+
+    @Test
+    public void swipe_test ()
+    {
+        swipeUpToFindElement(
+                By.xpath("//*[contains(@text, 'The Hunt')]"),
+                "Фильма нет в списке",
+                10
         );
     }
 
@@ -149,11 +187,11 @@ public class firstTest {
         return waitForElement(by, error_message, 5);
     }
     // метод который ищет элемент по xpath и кликает на него
-    private WebElement waitForElementAndClick(By by, String error_message, long timeOutInSecond)
+    private void waitForElementAndClick(By by, String error_message, long timeOutInSecond)
     {
         WebElement element =  waitForElement(by, error_message,timeOutInSecond);
         element.click();
-        return element;
+
     }
     // перегрузка предыдущего метода,
     private WebElement waitForElementAndClick(By by, String error_message)
@@ -177,14 +215,55 @@ public class firstTest {
         return element;
     }
     //метод который ищет элемент по Id и проверяет что его нету на странице (экране)
-    private boolean waitForElementNotPresentById (String id, String error_message, long timeOutInSecond)
+    private boolean waitForElementNotPresentById (By by, String error_message, long timeOutInSecond)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeOutInSecond);
         wait.withMessage(error_message + "\n");
-        By by = By.id(id);
         return wait.until(
                 ExpectedConditions.invisibilityOfElementLocated(by)
         );
+    }
+
+    public WebElement waitForElementAndClear (By by, String error_message, long timeOutInSecond)
+    {
+        WebElement element = waitForElement(by,error_message,timeOutInSecond);
+        element.clear();
+        return element;
+    }
+
+    public void simple_swipe(int fromX, int fromY,int toX, int toY)
+    {
+        TouchAction action = new TouchAction(driver);
+        action.press(PointOption.point(fromX,fromY)).waitAction().moveTo(PointOption.point(toX,toY)).release().perform();
+    }
+
+    public void swipeUp ()
+    {
+        TouchAction action = new TouchAction(driver);
+        Dimension size = driver.manage().window().getSize();
+
+        int x = size.width/2;
+
+        int start_y = (int)(size.height*0.8);
+
+        int end_y = (int) (size.height*0.2);
+
+        action.press(PointOption.point(x,start_y)).waitAction().moveTo(PointOption.point(x,end_y)).release().perform();
+    }
+
+    public void swipeUpToFindElement (By by, String error_message, int max_swipe)
+    {
+        int already_swipe = 0;
+        while (driver.findElements(by).size() == 0){
+
+            if (already_swipe > max_swipe){
+                waitForElement(by,"Закончились свапы" + " " + error_message);
+                return;
+            }
+
+            swipeUp();
+            ++ already_swipe;
+        }
     }
 }
 
