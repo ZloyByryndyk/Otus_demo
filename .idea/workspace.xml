@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb807ef5-3fcb-4722-bcd6-f8c0dde51f46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/SearchPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/SwipePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/initPoint/CoreTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObject/IOSPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/initPoint/Platform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/firstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/firstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/initPoint/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/initPoint/CoreTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/firstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/firstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,48 +46,28 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.VCS" />
   </component>
-  <component name="RunManager" selected="JUnit.firstTest">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="initPoint" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Otus_demo" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.firstTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="firstTest.find_film" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Otus_demo" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.firstTest" />
-      <option name="METHOD_NAME" value="find_film" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="firstTest.swipe_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Otus_demo" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.firstTest" />
-      <option name="METHOD_NAME" value="swipe_test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="firstTest.test_find_film" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Otus_demo" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.firstTest" />
-      <option name="METHOD_NAME" value="test_find_film" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="firstTest.test_swipe_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Otus_demo" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -96,8 +76,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.firstTest" />
-      <option name="METHOD_NAME" value="test_swipe_test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,10 +89,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.firstTest" />
-        <item itemvalue="JUnit.firstTest.test_swipe_test" />
-        <item itemvalue="JUnit.firstTest.test_find_film" />
-        <item itemvalue="JUnit.firstTest.find_film" />
-        <item itemvalue="JUnit.firstTest.swipe_test" />
       </list>
     </recent_temporary>
   </component>
@@ -166,35 +146,47 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1597247765419" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597922726034">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599501870393">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1597922726034" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1599501870393" />
+    <state x="532" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599499579544">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="532" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1599499579544" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599501428025">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1599501428025" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1597830860958">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1597830860958" />
-    <state width="1398" height="163" key="GridCell.Tab.0.bottom" timestamp="1598555327154">
+    <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1599501867718">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="163" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598555327154" />
-    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598270039183" />
-    <state width="1398" height="163" key="GridCell.Tab.0.center" timestamp="1598555327152">
+    <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900@0.0.1440.900" timestamp="1599501867718" />
+    <state width="1398" height="163" key="GridCell.Tab.0.bottom" timestamp="1599501878677">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="163" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598555327152" />
-    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1598270039181" />
-    <state width="1398" height="163" key="GridCell.Tab.0.left" timestamp="1598555327151">
+    <state width="1398" height="163" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599501878677" />
+    <state width="1398" height="163" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1599500304666" />
+    <state width="1398" height="163" key="GridCell.Tab.0.center" timestamp="1599501878673">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="163" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598555327151" />
+    <state width="1398" height="163" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599501878673" />
+    <state width="1398" height="163" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1599500304665" />
+    <state width="1398" height="163" key="GridCell.Tab.0.left" timestamp="1599501878669">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="163" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599501878669" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.0.1440.900@0.23.1440.825" timestamp="1597931883794" />
-    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1598270039181" />
-    <state width="1398" height="163" key="GridCell.Tab.0.right" timestamp="1598555327153">
+    <state width="1398" height="163" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1599500304664" />
+    <state width="1398" height="163" key="GridCell.Tab.0.right" timestamp="1599501878676">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="163" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598555327153" />
-    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1598270039182" />
+    <state width="1398" height="163" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599501878676" />
+    <state width="1398" height="163" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1599500304666" />
     <state width="1398" height="287" key="GridCell.Tab.1.bottom" timestamp="1597251149299">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -223,9 +215,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1597753848494" />
-    <state x="114" y="63" key="new project wizard" timestamp="1597322991854">
+    <state x="114" y="63" key="new project wizard" timestamp="1599499229012">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="114" y="63" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1597322991854" />
+    <state x="114" y="63" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1599499229012" />
   </component>
 </project>
